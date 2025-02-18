@@ -21,7 +21,7 @@ export default function MobileNav() {
   return (
     <Dialog open={open} onOpenChange={(isOpen) => setOpen(isOpen)} >
         <DialogTrigger asChild >
-            <Button variant="ghost" className="block md:hidden ml-auto">
+            <Button variant="ghost" className="block md:hidden">
               <MenuIcon />
             </Button>
         </DialogTrigger>
