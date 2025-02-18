@@ -1,7 +1,20 @@
 import * as React from "react";
 import { Skeleton } from "@/components/ui/skeleton";
 
-const categories: Record<string, any> = {
+interface Product {
+  title: string;
+  description: string;
+  image: string;
+  features: string[];
+}
+
+interface Category {
+  title: string;
+  description: string;
+  products: Product[];
+}
+
+const categories: Record<string, Category> = {
   electrical: {
     title: "Electrical Products",
     description: "Details about Electrical products...",
