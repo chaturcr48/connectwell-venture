@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+
 import "./globals.css";
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
-import { MenuIcon } from "lucide-react";
-import ToggleMenu from "@/components/toggle-menu";
+import { Header } from "@/components/header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,36 +29,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="flex gap-8 items-center bg-foreground p-4">
-          <Link href="/" className="no-underline">
-            <Image src="/CV.png" alt="Connectwell ventures" width={40} height={40} className="rounded-full"  />
-          </Link>
-          <nav className="hidden md:block" >
-            <ul className="flex gap-1" >
-              <li>
-                <Button asChild variant="link" className="text-white" >
-                  <Link href="/">Home</Link>
-                </Button>
-              </li>
-              <li>
-                <Button asChild variant="link" className="text-white" >
-                  <Link href="/">About</Link>
-                </Button>
-              </li>
-              <li>
-                <Button asChild variant="link" className="text-white" >
-                  <Link href="/">Products</Link>
-                </Button>
-              </li>
-              <li>
-                <Button asChild variant="link" className="text-white" >
-                  <Link href="/">Contact</Link>
-                </Button>
-              </li>
-            </ul>
-          </nav>
-          <ToggleMenu />
-        </header>
+        <Header />
         {children}
       </body>
     </html>
