@@ -1,6 +1,5 @@
 import * as React from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 
 import {
   Carousel,
@@ -23,7 +22,7 @@ export default function Home() {
   return (
     <>
       <div className="relative h-[450px] mb-4">
-        <Image src="/home/home_page_image.jpg" alt="home page" fill />
+        <Image src="/home/home_page_image.jpg" alt="home page" fill priority />
         <h1>Home page content</h1>
       </div>
 
@@ -34,7 +33,7 @@ export default function Home() {
               <div>
                 <Card>
                   <CardContent className="flex aspect-video items-center justify-center p-6 relative">
-                    <Image src={image} alt="top selling produc" fill />
+                    <Image src={image} alt="top selling produc" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                   </CardContent>
                 </Card>
               </div>
