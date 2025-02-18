@@ -193,13 +193,13 @@ export default async function Electrical({
         </div>
       </div>
 
-      <div className="container section-title" data-aos="fade-up">
+      <div className="container section-title">
         <span>
-          {categoryDetails.products.title}
+          {categoryDetails.title}
           <br />
         </span>
-        <h2>{categoryDetails.products.title}</h2>
-        <p>{categoryDetails.products.description}</p>
+        <h2>{categoryDetails.title}</h2>
+        <p>{categoryDetails.description}</p>
       </div>
 
       <div className="container">

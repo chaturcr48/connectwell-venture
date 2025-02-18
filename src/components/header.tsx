@@ -10,7 +10,7 @@ export function Header() {
     <header className="flex gap-8 items-center bg-background p-4 border-b border-border sticky top-0 z-10 backdrop-blur-sm">
       <Link href="/" className="no-underline">
         <Image
-          src="/CV.png"
+          src="/others/CV.png"
           alt="Connectwell ventures"
           width={40}
           height={40}
