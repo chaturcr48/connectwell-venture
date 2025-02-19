@@ -17,164 +17,337 @@ interface Category {
 const categories: Record<string, Category> = {
   electrical: {
     title: "Electrical Products",
-    description: "Details about Electrical products...",
+    description: "Explore our range of high-quality electrical products designed for various industrial applications.",
     products: [
       {
         title: "Crane Products",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        description: "Durable and reliable crane products for heavy lifting and material handling.",
         image: "/products/electrical_products/product-1.png",
         features: [
-          "Ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-          "Duis aute irure dolor in reprehenderit in voluptate velit.",
-          "Ullam est qui quos consequatur eos accusamus.",
+          "High load capacity.",
+          "Robust construction.",
+          "Easy maintenance.",
         ],
       },
       {
         title: "Insulating Mat",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        description: "High-quality insulating mats for electrical safety and protection.",
         image: "/products/electrical_products/product-2.png",
         features: [
-          "Ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-          "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-          "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "Excellent dielectric strength.",
+          "Non-slip surface.",
+          "Resistant to acids and alkalis.",
         ],
       },
       {
         title: "Insulated Tools",
-        description:
-          "Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.",
+        description: "Premium insulated tools for safe electrical work.",
         image: "/products/electrical_products/product-3.png",
         features: [
-          "Ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-          "Duis aute irure dolor in reprehenderit in voluptate velit.",
-          "Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.",
+          "Ergonomic design.",
+          "High voltage protection.",
+          "Durable materials.",
+        ],
+      },
+      {
+        title: "Circuit Breakers",
+        description: "Reliable circuit breakers for electrical circuit protection.",
+        image: "/products/electrical_products/product-4.png",
+        features: [
+          "High breaking capacity.",
+          "Compact design.",
+          "Easy installation.",
+        ],
+      },
+      {
+        title: "Switchgear",
+        description: "Advanced switchgear solutions for efficient power distribution.",
+        image: "/products/electrical_products/product-5.png",
+        features: [
+          "High performance.",
+          "Safety features.",
+          "Long service life.",
+        ],
+      },
+      {
+        title: "Transformers",
+        description: "Efficient transformers for voltage regulation and power distribution.",
+        image: "/products/electrical_products/product-6.png",
+        features: [
+          "High efficiency.",
+          "Low maintenance.",
+          "Robust construction.",
         ],
       },
     ],
   },
   instrumentation: {
     title: "Instrumentation Products",
-    description: "Details about Instrumentation products...",
+    description: "Discover our range of precision instrumentation products for accurate measurements.",
     products: [
       {
         title: "Pressure Gauges",
-        description:
-          "High-precision pressure gauges for industrial and laboratory applications.",
+        description: "High-precision pressure gauges for industrial and laboratory applications.",
         image: "/products/instrumentation_products/product-1.png",
         features: [
-          "Durable stainless steel casing for long-lasting performance.",
-          "Wide range of pressure measurement options available.",
-          "Certified for high accuracy and reliability.",
+          "Durable stainless steel casing.",
+          "Wide range of pressure measurement options.",
+          "Certified for high accuracy.",
         ],
       },
       {
         title: "Temperature Sensors",
-        description:
-          "Accurate temperature sensors designed for industrial and scientific use.",
+        description: "Accurate temperature sensors designed for industrial and scientific use.",
         image: "/products/instrumentation_products/product-2.png",
         features: [
-          "Supports multiple temperature ranges and sensing technologies.",
-          "Fast response time for real-time monitoring.",
-          "Easy installation with various mounting options.",
+          "Supports multiple temperature ranges.",
+          "Fast response time.",
+          "Easy installation.",
         ],
       },
       {
         title: "Flow Meters",
-        description:
-          "Advanced flow meters to measure liquid and gas flow efficiently.",
+        description: "Advanced flow meters to measure liquid and gas flow efficiently.",
         image: "/products/instrumentation_products/product-3.png",
         features: [
-          "Digital and analog output options available.",
-          "Designed for high-precision fluid measurement.",
-          "Compatible with multiple pipe sizes and materials.",
+          "Digital and analog output options.",
+          "High-precision fluid measurement.",
+          "Compatible with multiple pipe sizes.",
+        ],
+      },
+      {
+        title: "Level Transmitters",
+        description: "Reliable level transmitters for accurate level measurement.",
+        image: "/products/instrumentation_products/product-4.png",
+        features: [
+          "High accuracy.",
+          "Robust construction.",
+          "Easy calibration.",
+        ],
+      },
+      {
+        title: "Data Loggers",
+        description: "Advanced data loggers for precise data recording and monitoring.",
+        image: "/products/instrumentation_products/product-5.png",
+        features: [
+          "High storage capacity.",
+          "User-friendly interface.",
+          "Multiple sensor compatibility.",
+        ],
+      },
+      {
+        title: "Signal Conditioners",
+        description: "High-performance signal conditioners for accurate signal processing.",
+        image: "/products/instrumentation_products/product-6.png",
+        features: [
+          "Wide input range.",
+          "High accuracy.",
+          "Easy installation.",
         ],
       },
     ],
   },
   mechanical: {
     title: "Mechanical Products",
-    description: "Details about Mechanical products...",
+    description: "Browse our selection of high-quality mechanical products for various industrial applications.",
     products: [
       {
         title: "Bearings",
-        description:
-          "High-quality bearings designed for various industrial applications.",
+        description: "High-quality bearings designed for various industrial applications.",
         image: "/products/mechanical_products/product-1.png",
         features: [
-          "Low friction and high durability for smooth operation.",
-          "Available in different sizes and configurations.",
-          "Engineered for heavy-duty use and long lifespan.",
+          "Low friction and high durability.",
+          "Available in different sizes.",
+          "Engineered for heavy-duty use.",
         ],
       },
       {
         title: "Gearboxes",
-        description:
-          "Precision-engineered gearboxes for high-efficiency power transmission.",
+        description: "Precision-engineered gearboxes for high-efficiency power transmission.",
         image: "/products/mechanical_products/product-2.png",
         features: [
-          "Robust construction for heavy loads and harsh environments.",
-          "Available in multiple gear ratios for different applications.",
-          "Optimized for minimal noise and maximum efficiency.",
+          "Robust construction.",
+          "Available in multiple gear ratios.",
+          "Optimized for minimal noise.",
         ],
       },
       {
         title: "Hydraulic Cylinders",
-        description:
-          "Reliable hydraulic cylinders for industrial machinery and equipment.",
+        description: "Reliable hydraulic cylinders for industrial machinery and equipment.",
         image: "/products/mechanical_products/product-3.png",
         features: [
-          "High-pressure resistance for demanding operations.",
-          "Precision seals to prevent leaks and ensure efficiency.",
-          "Customizable stroke lengths and mounting options.",
+          "High-pressure resistance.",
+          "Precision seals.",
+          "Customizable stroke lengths.",
+        ],
+      },
+      {
+        title: "Couplings",
+        description: "Durable couplings for efficient power transmission.",
+        image: "/products/mechanical_products/product-4.png",
+        features: [
+          "High torque capacity.",
+          "Easy installation.",
+          "Maintenance-free operation.",
+        ],
+      },
+      {
+        title: "Pulleys",
+        description: "High-quality pulleys for smooth and efficient power transmission.",
+        image: "/products/mechanical_products/product-5.png",
+        features: [
+          "Precision machining.",
+          "High load capacity.",
+          "Corrosion-resistant materials.",
+        ],
+      },
+      {
+        title: "Chains",
+        description: "Durable chains for various industrial applications.",
+        image: "/products/mechanical_products/product-6.png",
+        features: [
+          "High tensile strength.",
+          "Available in different sizes.",
+          "Long service life.",
         ],
       },
     ],
   },
   automation: {
     title: "Automation Products",
-    description: "Details about Automation products...",
+    description: "Explore our range of advanced automation products for efficient industrial automation.",
     products: [
       {
         title: "PLC Controllers",
-        description:
-          "Programmable Logic Controllers for industrial automation and process control.",
+        description: "Programmable Logic Controllers for industrial automation and process control.",
         image: "/products/automation_products/product-1.png",
         features: [
           "Supports multiple input/output configurations.",
-          "Advanced programming capabilities for complex automation tasks.",
-          "Highly reliable and efficient operation.",
+          "Advanced programming capabilities.",
+          "Highly reliable operation.",
         ],
       },
       {
         title: "Industrial Robots",
-        description:
-          "High-performance industrial robots for manufacturing and automation.",
+        description: "High-performance industrial robots for manufacturing and automation.",
         image: "/products/automation_products/product-2.png",
         features: [
-          "Fast and precise movement for high-speed production lines.",
-          "Multiple axis configurations for versatile applications.",
-          "Easy integration with existing automation systems.",
+          "Fast and precise movement.",
+          "Multiple axis configurations.",
+          "Easy integration with existing systems.",
         ],
       },
       {
         title: "SCADA Systems",
-        description:
-          "Supervisory Control and Data Acquisition systems for monitoring and control.",
+        description: "Supervisory Control and Data Acquisition systems for monitoring and control.",
         image: "/products/automation_products/product-3.png",
         features: [
-          "Real-time data collection and visualization.",
-          "Remote access and control capabilities.",
-          "Scalable solutions for industries of all sizes.",
+          "Real-time data collection.",
+          "Remote access and control.",
+          "Scalable solutions.",
+        ],
+      },
+      {
+        title: "HMI Panels",
+        description: "User-friendly HMI panels for efficient machine control.",
+        image: "/products/automation_products/product-4.png",
+        features: [
+          "Intuitive interface.",
+          "High-resolution display.",
+          "Multiple connectivity options.",
+        ],
+      },
+      {
+        title: "Sensors",
+        description: "Advanced sensors for accurate detection and measurement.",
+        image: "/products/automation_products/product-5.png",
+        features: [
+          "High sensitivity.",
+          "Wide range of sensing technologies.",
+          "Easy installation.",
+        ],
+      },
+      {
+        title: "Actuators",
+        description: "Reliable actuators for precise control and movement.",
+        image: "/products/automation_products/product-6.png",
+        features: [
+          "High force output.",
+          "Compact design.",
+          "Long service life.",
+        ],
+      },
+    ],
+  },
+  safety: {
+    title: "Safety Products",
+    description: "Ensure workplace safety with our range of high-quality safety products.",
+    products: [
+      {
+        title: "Safety Helmets",
+        description: "Durable safety helmets for head protection in hazardous environments.",
+        image: "/products/safety_products/product-1.png",
+        features: [
+          "Impact-resistant material.",
+          "Adjustable straps for a secure fit.",
+          "Comfortable and lightweight design.",
+        ],
+      },
+      {
+        title: "Safety Gloves",
+        description: "Protective gloves for hand safety in various industrial applications.",
+        image: "/products/safety_products/product-2.png",
+        features: [
+          "Cut-resistant material.",
+          "Enhanced grip for better handling.",
+          "Breathable and comfortable.",
+        ],
+      },
+      {
+        title: "Safety Goggles",
+        description: "High-quality safety goggles for eye protection.",
+        image: "/products/safety_products/product-3.png",
+        features: [
+          "Anti-fog coating.",
+          "Scratch-resistant lenses.",
+          "Adjustable headband.",
+        ],
+      },
+      {
+        title: "Ear Protection",
+        description: "Effective ear protection for noisy environments.",
+        image: "/products/safety_products/product-4.png",
+        features: [
+          "Noise reduction rating (NRR) of 30 dB.",
+          "Comfortable fit.",
+          "Durable construction.",
+        ],
+      },
+      {
+        title: "Safety Shoes",
+        description: "Sturdy safety shoes for foot protection.",
+        image: "/products/safety_products/product-5.png",
+        features: [
+          "Steel toe cap.",
+          "Slip-resistant sole.",
+          "Comfortable and durable.",
+        ],
+      },
+      {
+        title: "High-Visibility Vests",
+        description: "High-visibility vests for enhanced safety in low-light conditions.",
+        image: "/products/safety_products/product-6.png",
+        features: [
+          "Reflective strips for visibility.",
+          "Lightweight and breathable.",
+          "Adjustable fit.",
         ],
       },
     ],
   },
 };
 
-
-export default async function Electrical({
+export default async function CategoryPage({
   params,
 }: {
   params: Promise<{ category: string }>;
@@ -184,61 +357,49 @@ export default async function Electrical({
 
   return (
     <div>
-      <div className="flex items-center space-x-4">
-        <Skeleton className="h-12 w-12" />
-        <div className="space-y-2">
-          <Skeleton className="h-4 w-[200px]" />
-          <Skeleton className="h-4 w-[250px]" />
-          <Skeleton className="h-4 w-[250px]" />
+      <div
+        className="relative w-full h-64 bg-cover bg-center"
+        style={{ backgroundImage: `url('/path/to/your/image.jpg')` }}
+      >
+        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+          <div className="text-center text-white">
+            <h2 className="text-3xl font-bold">{categoryDetails.title}</h2>
+            <p className="mt-2">{categoryDetails.description}</p>
+          </div>
         </div>
       </div>
 
-      <div className="container section-title">
-        <span>
-          {categoryDetails.title}
-          <br />
-        </span>
-        <h2>{categoryDetails.title}</h2>
-        <p>{categoryDetails.description}</p>
-      </div>
-
-      <div className="container">
-        {categoryDetails.products.map((product: any, index: number) => (
+      <div className="w-[85%] mx-auto relative container grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+        {categoryDetails.products.map((product: Product, index: number) => (
           <div
-            className="row gy-4 align-items-center features-item"
+            className="flex flex-col md:flex-row items-center mb-4 bg-white shadow-md rounded-lg overflow-hidden"
             key={index}
           >
             <div
-              className={`col-md-5 ${
-                index % 2 === 1 ? "order-1 order-md-2" : ""
-              } d-flex align-items-center`}
+              className="md:w-1/2 p-2"
               data-aos="zoom-out"
               data-aos-delay={`${(index + 1) * 100}`}
             >
               <img
                 src={product.image}
-                className="img-fluid"
+                className="w-full h-auto object-cover"
                 alt={product.title}
               />
             </div>
             <div
-              className={`col-md-7 ${
-                index % 2 === 1 ? "order-2 order-md-1" : ""
-              }`}
+              className="md:w-1/2 p-2"
               data-aos="fade-up"
               data-aos-delay={`${(index + 1) * 100}`}
             >
-              <h3>{product.title}</h3>
-              <p className="fst-italic">{product.description}</p>
-              <ul>
-                {product.features.map(
-                  (feature: string, featureIndex: number) => (
-                    <li key={featureIndex}>
-                      <i className="bi bi-check"></i>
-                      <span> {feature}</span>
-                    </li>
-                  )
-                )}
+              <h3 className="text-lg font-semibold mb-1">{product.title}</h3>
+              <p className="italic text-gray-600 mb-2">{product.description}</p>
+              <ul className="list-disc list-inside space-y-1">
+                {product.features.map((feature: string, featureIndex: number) => (
+                  <li key={featureIndex} className="flex items-start">
+                    <i className="bi bi-check mr-1"></i>
+                    <span>{feature}</span>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
