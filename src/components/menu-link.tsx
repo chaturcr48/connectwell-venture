@@ -19,20 +19,16 @@ const components: { title: string; href: string }[] = [
     href: "/products/electrical",
   },
   {
-    title: "Instrumentation Products",
-    href: "/products/instrumentation",
+    title: "Automation Products",
+    href: "/products/automation",
   },
   {
     title: "Mechanical Products",
     href: "/products/mechanical",
   },
   {
-    title: "Automation Products",
-    href: "/products/automation",
-  },
-  {
-    title: "Safety Products",
-    href: "/products/safety",
+    title: "Spill Pallet",
+    href: "/products/spillPallet",
   },
 ];
 
@@ -54,7 +50,7 @@ export function MainNavigationMenu({ onClick }: { onClick?: () => void }) {
         </NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
-        <NavigationMenuTrigger>Products</NavigationMenuTrigger>
+        <NavigationMenuTrigger autoFocus={false} >Products</NavigationMenuTrigger>
         <NavigationMenuContent className="top-[calc(100% - 36px)]" >
           <ul className="grid w-full gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
             {components.map((component) => (
