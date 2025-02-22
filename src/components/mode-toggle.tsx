@@ -13,7 +13,6 @@ export function ModeToggle() {
     <Button
       variant="ghost"
       size="icon"
-      className="ml-auto"
       onClick={() => {
         setTheme(theme === "light" ? "dark" : "light");
       }}
