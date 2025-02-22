@@ -1,5 +1,5 @@
+import Image from "next/image";
 import * as React from "react";
-import { Skeleton } from "@/components/ui/skeleton";
 
 interface Product {
   title: string;
@@ -380,7 +380,7 @@ export default async function CategoryPage({
               data-aos="zoom-out"
               data-aos-delay={`${(index + 1) * 100}`}
             >
-              <img
+              <Image
                 src={product.image}
                 className="w-full h-auto object-cover"
                 alt={product.title}
