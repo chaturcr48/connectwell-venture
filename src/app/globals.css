@@ -73,3 +73,16 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.auto-grid {
+  --auto-grid-min-size: 16rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+  grid-gap: 16px;
+}
+
+@layer utilities {
+  .container {
+    @apply px-6 py-6 xl:px-8 mx-auto mt-4 max-w-screen-2xl;
+  }
+}

@@ -28,7 +28,7 @@ const components: { title: string; href: string }[] = [
   },
   {
     title: "Spill Pallet",
-    href: "/products/spillPallet",
+    href: "/products/spill-pallet",
   },
 ];
 

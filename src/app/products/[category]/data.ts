@@ -265,7 +265,7 @@ export const categories: Record<string, Category> = {
         title: "Ergonomically Designed Control Desk",
         description: "Modular construction ergonomically designed.",
         image:
-          "/products/electrical_products/ergonomically_designed_control_desk.webp",
+          "/products/electrical_products/ergonomically_designed_control_desk.png",
         keyFeatures: {
           "keyFeatures-1": "Degree of Protection: IP42 55.",
           "keyFeatures-2": "Power Coated: Siemens grey / 7035 / 631 shapes.",
@@ -678,7 +678,7 @@ export const categories: Record<string, Category> = {
       },
     ],
   },
-  spillPallet: {
+  "spill-pallet": {
     title: "Spill Pallets",
     description:
       "Explore our range of spill pallets designed to contain leaks and spills from drums, IBCs, and other containers. These spill containment solutions help prevent environmental contamination and ensure compliance with safety regulations.",

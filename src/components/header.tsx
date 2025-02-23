@@ -8,7 +8,7 @@ import { MainNavigationMenu } from "./menu-link";
 
 export function Header() {
   return (
-    <header className="flex gap-8 items-center bg-background/95 p-4 border-b border-border sticky top-0 z-10 backdrop-blur-sm">
+    <header className="flex gap-8 items-center bg-background/95 p-4 border-b border-border sticky top-0 z-20 backdrop-blur-sm">
       <Link href="/" className="no-underline">
         <Image
           src="/others/CV.png"

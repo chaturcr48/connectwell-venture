@@ -1,116 +1,82 @@
 import Link from "next/link"
 import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react"
+import { buttonVariants } from "./ui/button"
 
 export default function Footer() {
   return (
-    <footer className="bg-zinc-100 text-zinc-600 py-12 mt-4">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="space-y-4">
-            <h3 className="font-bold text-lg text-zinc-900">Company</h3>
+    <footer className="bg-background border-border/70 dark:border-border">
+      <div className="container">
+        <nav aria-label="Connectwell ventures directpry" className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="space-y-4">
+            <h3 className="font-bold text-lg text-primary">Products</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/about" className="hover:text-zinc-900 transition-colors">
+                <Link href="/products/electrical" className={buttonVariants({ variant: "link", className: "px-0 text-sm text-primary/85" })}>
+                  Electrical
+                </Link>
+              </li>
+              <li>
+                <Link href="/products/automation" className={buttonVariants({ variant: "link", className: "px-0 text-sm text-primary/85" })}>
+                  Automation
+                </Link>
+              </li>
+              <li>
+                <Link href="/products/mechanical" className={buttonVariants({ variant: "link", className: "px-0 text-sm text-primary/85" })}>
+                  Mechanical
+                </Link>
+              </li>
+              <li>
+                <Link href="/products/spill-pallet" className={buttonVariants({ variant: "link", className: "px-0 text-sm text-primary/85" })}>
+                  Spill Pallet
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className="space-y-4">
+            <h3 className="font-bold text-lg text-primary">Company</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link href="/about" className={buttonVariants({ variant: "link", className: "px-0 text-sm text-primary/85" })}>
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/careers" className="hover:text-zinc-900 transition-colors">
+                <Link href="/" className={buttonVariants({ variant: "link", className: "px-0 text-sm text-primary/85" })}>
                   Careers
                 </Link>
               </li>
               <li>
-                <Link href="/press" className="hover:text-zinc-900 transition-colors">
+                <Link href="/" className={buttonVariants({ variant: "link", className: "px-0 text-sm text-primary/85" })}>
                   Press
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="hover:text-zinc-900 transition-colors">
+                <Link href="/" className={buttonVariants({ variant: "link", className: "px-0 text-sm text-primary/85" })}>
                   Blog
                 </Link>
               </li>
             </ul>
           </div>
-          <div className="space-y-4">
-            <h3 className="font-bold text-lg text-zinc-900">Products</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/products/software" className="hover:text-zinc-900 transition-colors">
-                  Software
-                </Link>
-              </li>
-              <li>
-                <Link href="/products/hardware" className="hover:text-zinc-900 transition-colors">
-                  Hardware
-                </Link>
-              </li>
-              <li>
-                <Link href="/products/services" className="hover:text-zinc-900 transition-colors">
-                  Services
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className="space-y-4">
-            <h3 className="font-bold text-lg text-zinc-900">Resources</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/docs" className="hover:text-zinc-900 transition-colors">
-                  Documentation
-                </Link>
-              </li>
-              <li>
-                <Link href="/support" className="hover:text-zinc-900 transition-colors">
-                  Support
-                </Link>
-              </li>
-              <li>
-                <Link href="/faq" className="hover:text-zinc-900 transition-colors">
-                  FAQ
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className="space-y-4">
-            <h3 className="font-bold text-lg text-zinc-900">Legal</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/privacy" className="hover:text-zinc-900 transition-colors">
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link href="/terms" className="hover:text-zinc-900 transition-colors">
-                  Terms of Service
-                </Link>
-              </li>
-              <li>
-                <Link href="/cookies" className="hover:text-zinc-900 transition-colors">
-                  Cookie Policy
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
+        </nav>
         <div className="mt-12 pt-8 border-t border-zinc-200">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
-              <p className="text-zinc-600">&copy; {new Date().getFullYear()} Your Company Name. All rights reserved.</p>
+              <p className="text-primary">&copy; {new Date().getFullYear()} Connectwell Ventures. All rights reserved.</p>
             </div>
-            <div className="flex space-x-4">
-              <Link href="https://facebook.com" className="text-zinc-400 hover:text-zinc-900 transition-colors">
+            <div className="flex space-x-2">
+              <Link  target="_blank" rel="noreferrer" href="https://facebook.com" className={buttonVariants({ variant: "ghost" })}>
                 <Facebook size={24} />
                 <span className="sr-only">Facebook</span>
               </Link>
-              <Link href="https://twitter.com" className="text-zinc-400 hover:text-zinc-900 transition-colors">
+              <Link target="_blank" rel="noreferrer" href="https://twitter.com" className={buttonVariants({ variant: "ghost" })}>
                 <Twitter size={24} />
                 <span className="sr-only">Twitter</span>
               </Link>
-              <Link href="https://instagram.com" className="text-zinc-400 hover:text-zinc-900 transition-colors">
+              <Link target="_blank" rel="noreferrer" href="https://instagram.com" className={buttonVariants({ variant: "ghost" })}>
                 <Instagram size={24} />
                 <span className="sr-only">Instagram</span>
               </Link>
-              <Link href="https://linkedin.com" className="text-zinc-400 hover:text-zinc-900 transition-colors">
+              <Link target="_blank" rel="noreferrer" href="https://linkedin.com" className={buttonVariants({ variant: "ghost" })}>
                 <Linkedin size={24} />
                 <span className="sr-only">LinkedIn</span>
               </Link>
