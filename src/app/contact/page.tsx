@@ -1,10 +1,11 @@
 import React from 'react';
+import ContactForm from './contact-form';
 
 export default function Contact() {
   return (
     <div className="container mx-auto p-8">
-      <h1 className="text-3xl font-bold mb-4">Contact Us</h1>
-      <p className="mb-8">
+      <h1 className="text-3xl font-bold mb-4 text-center text-balance">Contact Us</h1>
+      <p className="mb-8 text-center text-pretty w-full mx-0 md:w-3/4 md:mx-auto">
         We would love to hear from you! Whether you have a question about our products, need assistance, or just want to give feedback, feel free to reach out to us.
       </p>
 
@@ -32,25 +33,7 @@ export default function Contact() {
 
         <div>
           <h2 className="text-2xl font-semibold mb-4">Send Us a Message</h2>
-          <form className="space-y-4">
-            <div>
-              <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
-              <input type="text" id="name" name="name" className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" required />
-            </div>
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
-              <input type="email" id="email" name="email" className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" required />
-            </div>
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium text-gray-700">Message</label>
-              <textarea id="message" name="message" rows={4} className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" required></textarea>
-            </div>
-            <div>
-              <button type="submit" className="w-full py-2 px-4 bg-blue-500 text-white font-semibold rounded-md shadow-sm hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-                Send Message
-              </button>
-            </div>
-          </form>
+          <ContactForm />
         </div>
       </div>
 
