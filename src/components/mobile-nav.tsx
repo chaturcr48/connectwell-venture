@@ -28,7 +28,7 @@ export default function MobileNav() {
       </DialogTrigger>
       <DialogContent aria-describedby={undefined} overlayClassname="md:hidden" className="left-[-2px] top-0 translate-x-0 translate-y-0 max-w-[calc(100vw-20px)] m-[10px] md:hidden">
         <DialogTitle className="sr-only">Navigation menus</DialogTitle>
-        <NavigationMenu className="items-start justify-start max-w-full md:max-w-max md:items-center md:justify-center" menuViewPortClassName="top-[calc(100%-36px)] md:top-full w-full" >
+        <NavigationMenu className="items-start justify-start max-w-full md:max-w-max md:items-center md:justify-center" menuViewPortClassName="top-[calc(100%-80px)] md:top-full w-full" >
           <MainNavigationMenu onClick={handleClose} />
         </NavigationMenu>
       </DialogContent>

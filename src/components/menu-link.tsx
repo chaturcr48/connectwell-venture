@@ -43,15 +43,8 @@ export function MainNavigationMenu({ onClick }: { onClick?: () => void }) {
         </NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
-        <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-          <Link href="/about" onClick={onClick}>
-            About
-          </Link>
-        </NavigationMenuLink>
-      </NavigationMenuItem>
-      <NavigationMenuItem>
-        <NavigationMenuTrigger autoFocus={false} >Products</NavigationMenuTrigger>
-        <NavigationMenuContent className="top-[calc(100% - 36px)]" >
+        <NavigationMenuTrigger>Products</NavigationMenuTrigger>
+        <NavigationMenuContent>
           <ul className="grid w-full gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
             {components.map((component) => (
               <ListItem
@@ -63,6 +56,13 @@ export function MainNavigationMenu({ onClick }: { onClick?: () => void }) {
             ))}
           </ul>
         </NavigationMenuContent>
+      </NavigationMenuItem>
+      <NavigationMenuItem>
+        <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+          <Link href="/about" onClick={onClick}>
+            About
+          </Link>
+        </NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
         <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
