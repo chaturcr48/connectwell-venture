@@ -49,11 +49,11 @@ export default function Contact() {
             <CardContent className="space-y-2">
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
-                <p className="text-nowrap" >+1 (555) 123-4567</p>
+                <p className="text-nowrap" >+91 8969057040</p>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
-                <p className="text-nowrap" >info@example.com</p>
+                <p className="text-nowrap" >info@connectwell.com</p>
               </div>
             </CardContent>
           </Card>
@@ -64,9 +64,9 @@ export default function Contact() {
               <CardTitle>Business Hours</CardTitle>
             </CardHeader>
             <CardContent className="*:text-nowrap">
-              <p>Monday - Friday</p>
+              <p>Monday - Saturday</p>
               <p>10:00 AM - 7:00 PM</p>
-              <p>Saturday - Sunday</p>
+              <p>Sunday</p>
               <p>Closed</p>
             </CardContent>
           </Card>
