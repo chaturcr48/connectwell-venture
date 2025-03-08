@@ -20,6 +20,9 @@ const formSchema = z.object({
   name: z.string().min(3, {
     message: "Name must be at least 2 characters.",
   }),
+  phone: z.string().regex(/^\d{10}$/, {
+    message: "Please enter a valid phone number.",
+  }),
   email: z.string().email({
     message: "Please enter a valid email address.",
   }),
@@ -33,6 +36,7 @@ export default function ContactForm() {
     resolver: zodResolver(formSchema),
     defaultValues: {
       name: "",
+      phone: "",
       email: "",
       message: "",
     },
@@ -46,7 +50,10 @@ export default function ContactForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col gap-[12px]">
+      <form
+        onSubmit={form.handleSubmit(onSubmit)}
+        className="flex flex-col gap-[12px]"
+      >
         <FormField
           control={form.control}
           name="name"
@@ -54,7 +61,28 @@ export default function ContactForm() {
             <FormItem>
               <FormLabel>Name</FormLabel>
               <FormControl>
-                <Input placeholder="Enter your name" className="py-[6px] h-11" {...field} />
+                <Input
+                  placeholder="Enter your name"
+                  className="py-[6px] h-11"
+                  {...field}
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="phone"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Phone</FormLabel>
+              <FormControl>
+                <Input
+                  placeholder="Enter your phone number"
+                  className="py-[6px] h-11"
+                  {...field}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -67,7 +95,11 @@ export default function ContactForm() {
             <FormItem>
               <FormLabel>Email</FormLabel>
               <FormControl>
-                <Input placeholder="Enter your email" className="py-[6px] h-11" {...field} />
+                <Input
+                  placeholder="Enter your email"
+                  className="py-[6px] h-11"
+                  {...field}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -80,13 +112,19 @@ export default function ContactForm() {
             <FormItem>
               <FormLabel>Message</FormLabel>
               <FormControl>
-                <Textarea placeholder="Enter your message" className="min-h-[120px] leading-[18px] aria-invalid:border-destructive" {...field} />
+                <Textarea
+                  placeholder="Enter your message"
+                  className="min-h-[120px] leading-[18px] aria-invalid:border-destructive"
+                  {...field}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
           )}
         />
-        <Button variant="secondary" type="submit">Submit</Button>
+        <Button variant="secondary" type="submit">
+          Submit
+        </Button>
       </form>
     </Form>
   );
