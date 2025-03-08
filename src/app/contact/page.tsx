@@ -34,10 +34,8 @@ export default function Contact() {
               <CardTitle>Our Office</CardTitle>
             </CardHeader>
             <CardContent className="*:text-nowrap">
-              <p>123 Business Street</p>
-              <p>Suite 456</p>
-              <p>Cityville, State 78901</p>
-              <p>United States</p>
+              <p>Adityapur</p>
+              <p>Jamshedpur, Jharkhand, 831013</p>
             </CardContent>
           </Card>
 
